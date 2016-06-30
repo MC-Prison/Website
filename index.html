@@ -102,7 +102,7 @@
         </div>
     </div>
 </div>
-<div class="container animated fadeIn">
+<div class="container wow fadeIn">
     <hr>
     <div class="row">
         <h1 class="text-center">Tools</h1>
@@ -193,7 +193,7 @@
         </div>
     </div>
 </div>
-<div class="container animated fadeIn">
+<div class="container wow fadeIn">
     <hr>
     <div class="row">
         <div class="col-md-12">
@@ -203,16 +203,20 @@
         </div>
         <div class="row">
             <center>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <a href="https://www.jetbrains.com/" target="_blank">
                     <img src="img/jetbrains.png" class="img-responsive" alt="JetBrains">
                 </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 v-center">
                 <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" target="_blank">
                     <img src="img/jprofiler.png" width="250px" class="img-responsive" alt="JProfiler">
                 </a>
-
+                </div>
             </center>
         </div>
     </div>
+    <br>
     <hr>
     <footer>
         <p class="text-center">&copy; 2016 MC-Prison Team. Sponsor logos copyright of their
@@ -224,6 +228,19 @@
     </footer>
 </div>
 
+<script src="assets/js/wow.min.js"></script>
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+</script>
 </body>
 </html>

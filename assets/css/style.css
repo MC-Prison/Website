@@ -5,6 +5,11 @@ body {
     padding-bottom: 20px;
 }
 
+.v-center {
+  position: relative;
+  transform: translateY(50%);
+}
+
 .navbar-inverse .navbar-brand {
     color: #FFFFFF;
 }
